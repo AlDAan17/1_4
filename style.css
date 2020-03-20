@@ -1,0 +1,196 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+    margin: 0;
+    font-family: 'TT Lakes';
+}
+
+button {
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    background: #F2F2F2;
+}
+
+.navbar__content{
+    width: 320px;
+    height: 1024px;
+    background: #fff;
+    box-shadow: 1px 0 15px rgb(151, 145, 145);
+}
+
+.navbar__content-header{
+    display: flex;
+    padding:23px 0 0 24px ;
+    margin-bottom: 51px;
+}
+
+.navbar__content-header-close,
+.navbar__content-header-search,
+.navbar__content-icons-call,
+.navbar__content-icons-message,
+.navbar__content-icons-profile{
+    position: relative;
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.navbar__content-icons:first-child{
+    margin: 0;
+}
+
+.navbar__content-header-close{
+    margin-right: 20px;
+}
+
+.navbar__content-header-close-icon,
+.navbar__content-header-search-icon{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.navbar__content-header-close-icon{
+    height: 16px;
+    width: 16px;
+}
+
+.navbar__content-header-logo-icon{
+    height: 51px;
+    width: 97px;
+    fill: #6B7B84;
+    margin-right: 75px;
+}
+
+.navbar__content-header-search-icon{
+    height: 17px;
+    width: 17px;
+}
+
+.navbar__content-menu{
+    padding-left: 24px;
+}
+
+.navbar__content-menu-items{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 600;
+    margin-bottom: 247px;
+}
+
+.navbar__content-menu-item{
+    padding-bottom: 32px;
+    cursor: pointer;
+}
+
+.navbar__content-menu-item--active{
+    position: relative;
+    color: #7E7E82;
+}
+
+.navbar__content-menu-item--active::before{
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 0;
+    border-left: 4px solid #41F6D7;
+    height: 32px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+.navbar__content-icons{
+    display:flex;
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.navbar__content-icons-call,
+.navbar__content-icons-message,
+.navbar__content-icons-profile{
+    margin-left: 16px;
+}
+
+.navbar__content-icons-call{
+    margin: 0;
+}
+
+.navbar__content-icons-call-item,
+.navbar__content-icons-message-item,
+.navbar__content-icons-profile-item{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.navbar__content-contacts{
+    padding-left: 24px;
+}
+
+.navbar__content-contacts-email{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.navbar__content-contacts-number{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1B1C21;
+}
+
+.navbar__content-language{
+    display: flex;
+    padding-left: 24px;
+    font-weight: 600;
+}
+
+.navbar__content-language-ru,
+.navbar__content-language-en,
+.navbar__content-language-ch{
+    color: #1B1C21;
+    padding-right: 7px;
+}
+
+.navbar__content-language-ru--active{
+    color: #7E7E82;
+}
