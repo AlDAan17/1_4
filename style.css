@@ -18,9 +18,11 @@ body {
 
 button {
     border: 0;
+    cursor: pointer;
 }
 
 a{
+    color: #1B1C21;
     text-decoration: none;
 }
 
@@ -46,6 +48,11 @@ ul {
     display: flex;
     padding:23px 0 0 24px ;
     margin-bottom: 51px;
+}
+
+.navbar__content-header button:hover,
+.navbar__content-icons button:hover{
+    background-color: #ee398a;
 }
 
 .navbar__content-header-close,
@@ -112,6 +119,11 @@ ul {
 .navbar__content-menu-item{
     padding-bottom: 32px;
     cursor: pointer;
+    transition: color .2s linear;
+}
+
+.navbar__content-menu-item:hover{
+    color: #9e9ea2;
 }
 
 .navbar__content-menu-item--active{
@@ -175,7 +187,6 @@ ul {
     letter-spacing: -0.6px;
     font-weight: 700;
     margin-bottom: 40px;
-    color: #1B1C21;
 }
 
 .navbar__content-language{
@@ -189,6 +200,10 @@ ul {
 .navbar__content-language-ch{
     color: #1B1C21;
     padding-right: 7px;
+    transition: color .2s linear;
+}
+.navbar__content-language a:hover{
+    color: #9e9ea2;
 }
 
 .navbar__content-language-ru--active{
